@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'TestNGParallel'
+version = '1.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:'3.8.1'
+    testCompile group: 'org.testng', name: 'testng', version:'6.11'
+}
